@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, div,iframe, ul, ol, dl, dt, dd, li, dl,
 h1, h2, h3, h4, table,th, td, input, button, select,
 textarea
@@ -15,14 +16,12 @@ ol, ul ,li
 img
 {
     border: 0;
-    vertical-align:middle;
 }
 
 body
 {
     color:#000000;
     background:#FFF;
-    text-align:center;
 }
 
 .clear

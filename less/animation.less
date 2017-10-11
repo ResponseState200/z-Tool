@@ -1,0 +1,41 @@
+
+// 可以做动画的垂直居中
+.topCenter(@Topnumber){
+  top:50%;
+  margin-top:-@Topnumber * 0.5px
+}
+
+// 可以做动画的水平居中
+.leftCenter(@Leftnumber){
+  left:50%;
+  margin-left: -@Leftnumber * 0.5px
+}
+
+
+// 定位下的水平居中
+.rowCenter(){
+  left:50%;
+  transform: translateX(-50%);
+}
+
+// 定位下的垂直居中
+.colCenter(){
+  top:50%;
+  transform: translateY(-50%);
+}
+
+// 垂直水平都居中
+.rowAndColCenter(){
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%) ;
+}
+
+// translate的动画
+.keyAnimation(@translateX:0,@translateY:0,@translateZ:0,@rotateX:0deg,@rotateY:0deg,@rotateZ:0deg,
+@scaleX:1,@scaleY:1,@scaleZ:1){
+  transform: translateX(@translateX) translateY(@translateY) translateZ(@translateZ)
+  rotateX(@rotateX) rotateY(@rotateY) rotateZ(@rotateZ)
+  scaleX(@scaleX) scaleY(@scaleY) scaleZ(@scaleZ);
+
+}
